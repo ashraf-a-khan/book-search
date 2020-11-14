@@ -44,3 +44,21 @@
     margin-bottom: 20px;
   }
 }
+
+.books1 {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.book {
+  background: #fff;
+  position: relative;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 27%;
+  color: #333;
+  flex-basis: width;
+  background-color: rgb(165, 230, 230);
+}

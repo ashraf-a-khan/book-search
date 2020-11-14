@@ -37,11 +37,12 @@ function App() {
             Search
           </button>
         </form>
-
-        {bookComponents &&
-          bookComponents.map((book) => {
-            return book;
-          })}
+        <div className="books1">
+          {bookComponents &&
+            bookComponents.map((book) => {
+              return book;
+            })}
+        </div>
       </div>
     </div>
   );
@@ -49,12 +50,10 @@ function App() {
 
 function BookComponent(props) {
   return (
-    <div className="column">
-      <div className="book">
-        <div>{props.book.authorName}</div>
-        <img src={props.book.imageUrl} />
-        <div>{props.book.title}</div>
-      </div>
+    <div className="book">
+      <div>Author Name: {props.book.authorName}</div>
+      <img src={props.book.imageUrl} />
+      <div>Title: {props.book.title}</div>
     </div>
   );
 }
