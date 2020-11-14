@@ -45,7 +45,7 @@
   }
 }
 
-.books1 {
+.books {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -61,4 +61,38 @@
   color: #333;
   flex-basis: width;
   background-color: rgb(165, 230, 230);
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+form.example input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: center;
+  width: 80%;
+  background: #f1f1f1;
+  margin: auto;
+  max-width: 300px;
+}
+
+.button {
+  background-color: #44c767;
+  border: 1px solid #18ab29;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 10px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+  margin-top: 10px;
+}
+.button:hover {
+  background-color: #5cbf2a;
+}
+.button:active {
+  position: relative;
+  top: 1px;
 }

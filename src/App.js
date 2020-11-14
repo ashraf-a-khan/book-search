@@ -31,13 +31,17 @@ function App() {
   return (
     <div className="App">
       <div>
-        <form>
+        <form className="example">
           <input type="text" id="un" />
-          <button type="submit" onClick={(event) => doSomething(event)}>
+          <button
+            className="button"
+            type="button"
+            onClick={(event) => doSomething(event)}
+          >
             Search
           </button>
         </form>
-        <div className="books1">
+        <div className="books">
           {bookComponents &&
             bookComponents.map((book) => {
               return book;
@@ -52,7 +56,7 @@ function BookComponent(props) {
   return (
     <div className="book">
       <div>Author Name: {props.book.authorName}</div>
-      <img src={props.book.imageUrl} />
+      <img src={props.book.imageUrl} alt="" />
       <div>Title: {props.book.title}</div>
     </div>
   );
